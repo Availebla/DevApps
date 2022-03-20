@@ -31,4 +31,4 @@ jobs:
           df -h
           which wget
           which curl
-          curl -X POST -H "Content-Type: application/json" -d '{"this":[{"is":{"some":["test","data"]}}]}' https://maker.ifttt.com/trigger/commited/json/with/key/${{ secrets.WEBHOOKS_SECRET }}
+          curl -X POST -H "Content-Type: application/json" -d '{"value1":"A change has been committed","value2":"Ka-","value3":"-boom"}' https://maker.ifttt.com/trigger/commited/with/key/${{ secrets.WEBHOOKS_SECRET }}
