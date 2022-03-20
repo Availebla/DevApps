@@ -18,17 +18,23 @@ DevApps is a simple app created to send a notification to a telegram channel, De
 3. Receive a telegram notification confirming that a change has been made
 
 ![Image](images/TelegramNotification.png)
-```
-code blocks for commands
-```
 
 ## How it works
 
-Webhooks - Recieve a web request with a JSON payload
-and then connects to IFTT for the lols
+The app utilizes github actions which runs a workflow every time a change is committed onto the main branch. This worflow is documented here: (.github/workflows/CICD.yml). The key line of code performs a POST web request with a JSON payload that is recieved by webhooks with a predefined event trigger and a personal key to connect to the IFTTT applet.
+
+### how the sausage gets made
 ```
-command to run if program contains helper info
+curl -X POST -H "Content-Type: application/json" -d '{"A change has been committed":"Kaboom!"}' https://maker.ifttt.com/trigger/commited/json/with/key/${{ secrets.WEBHOOKS_SECRET }}
 ```
+Breaking down the code, there are few important components:
+| Code | Description |
+| ----------- | ----------- |
+| '{"A change has been committed":"Kaboom!"}' | This is the JSON Payload which is delivered to our IFTTT applet using the POST command |
+| trigger/commited/ | 'commited' is the pre-configured event name used to trigger our IFTTT applet |
+| ${{ secrets.WEBHOOKS_SECRET }} | The IFTTT webhooks key is unique to your applet and should this repo be forked, will need to be replaced with your own Secret Key! |
+
+![Image](images/WebhooksTrigger.png)
 
 ## Authors
 
