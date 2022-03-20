@@ -1,32 +1,28 @@
 # DevApps
 
-This app was created to send a notification to a telegram channel, DevApps, when changes are committed to this repository: Availebla/DevApps.
+This app was created to send a notification to a telegram channel, DevApps, when changes are committed to this repository: [Availebla/DevApps](https://github.com/Availebla/DevApps).
 
 ## Getting Started
 
-### Apps/Functions Used
+### Apps Used
 
-* IFTTT: If This Then That service - Free Account Needed
-* Github Actions Workflow - Newly initialized repository
-* Webhooks integrations: https://ifttt.com/maker_webhooks - Recieve a web request with a JSON payload
-* Telegram - Account/Group Chat
-
-### Languages
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+* IFTTT: If This Then That service
+* Github Actions Workflow
+* Webhooks integrations: https://ifttt.com/maker_webhooks
+* Telegram
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+1. Commit a change to the repository
+2. Take a sip of coffee
+3. Receive a telegram notification confirming that a change has been made
 ```
 code blocks for commands
 ```
 
-## Help
+## How it works
 
-Any advise for common problems or issues.
+Webhooks - Recieve a web request with a JSON payload
 ```
 command to run if program contains helper info
 ```
