@@ -23,7 +23,7 @@ code blocks for commands
 ## How it works
 
 Webhooks - Recieve a web request with a JSON payload
-and then connects to IFTT
+and then connects to IFTT for the lols
 ```
 command to run if program contains helper info
 ```
