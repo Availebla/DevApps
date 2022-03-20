@@ -1,4 +1,4 @@
-# DevApps
+# DevApp
 
 DevApps is a simple app created to send a notification to a telegram channel, DevApps, when changes are committed to this repository: [Availebla/DevApps](https://github.com/Availebla/DevApps).
 
