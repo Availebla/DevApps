@@ -9,7 +9,7 @@ This Markdown cheat sheet provides a quick overview of all the Markdown syntax e
 
 ## Basic Syntax
 
-These are the elements outlined in John Gruber’s original design documefnt. All Markdown applications support these elements.
+These are the elements outlined in John Gruber’s original design document. All Markdown applications support these elements.
 
 ### Heading
 
