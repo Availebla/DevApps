@@ -7,8 +7,8 @@ DevApps is a simple app created to send a notification to a telegram channel, De
 ### Apps Used
 
 * Github Actions Workflow
-* Webhooks integrations: https://ifttt.com/maker_webhooks
 * IFTTT: If This Then That service
+* Webhooks integrations: https://ifttt.com/maker_webhooks
 * Telegram
 
 ### Executing program
@@ -23,41 +23,27 @@ DevApps is a simple app created to send a notification to a telegram channel, De
 
 The app utilizes github actions which runs a workflow every time a change is committed onto the main branch. This worflow is documented here: (.github/workflows/CICD.yml). The key line of code performs a POST web request with a JSON payload that is recieved by webhooks with a predefined event trigger and a personal key to connect to the IFTTT applet. The IFTT applet then posts a message to telegram (as shown in the screenshot above) to confirm a change has been made.
 
-### Github Actions Workflow: Essential Code
+### The Essential Code
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"A change has been committed":"Kaboom!"}' https://maker.ifttt.com/trigger/commited/json/with/key/${{ secrets.WEBHOOKS_SECRET }}
 ```
 Breaking down the code, there are few important components:
 | Code Component | Description |
 | ----------- | ----------- |
-| '{"A change has been committed":"Kaboom!"}' | This is the JSON Payload which is delivered to our IFTTT applet using the POST command |
-| trigger/commited/ | 'commited' is the pre-configured event name used to trigger our IFTTT applet |
-| ${{ secrets.WEBHOOKS_SECRET }} | The IFTTT webhooks key is unique to your applet and should this repo be forked, will need to be replaced with your own Secret Key! |
+| ...'{"A change has been committed":"Kaboom!"}'... | This is the JSON Payload which is delivered to our IFTTT applet using the POST command. This can be modified to deliver other preferred messages. |
+| ...trigger/commited/... | 'commited' is the pre-configured event name used to trigger our IFTTT applet, as shown here: ![Image](images/WebhooksTrigger.png) |
+| ...${{ secrets.WEBHOOKS_SECRET }} | The IFTTT webhooks key is unique to your applet and should this repo be forked, will need to be replaced with your own Secret Key. The Unique Secret key can be found by visiting this page after you've created the applet on IFTTT https://maker.ifttt.com/use ![Image](images/Secrets.png) |
 
-The Unique Secret key can be found by visiting this page after you've created the applet on IFTTT: https://maker.ifttt.com/use
-This is then added into the repository settings as a Key-Value pair as shown in the screenshot below
+The secret key is then added into the repository settings as a Key-Value pair:
 ![Image](images/Secret.png)
 
-![Image](images/WebhooksTrigger.png)
 
-## Authors
+## IFTTT
 
-Contributors names and contact info
+IFTTT makes it really easy to get the application up and running and provides the documentation you need to get your applet going. In this applet if Github change "commited", then Send message to Group DevApps. The documentations for webhooks and telegrams are listed below.
+* [Webhooks Service FAQ](https://help.ifttt.com/hc/en-us/articles/115010230347)
+* IFTTT: If This Then That service
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
