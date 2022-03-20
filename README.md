@@ -1,6 +1,6 @@
 # DevApps
 An application created to annoy friends
-Adding Stuff
+
 # Markdown Cheat Sheet
 
 Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
