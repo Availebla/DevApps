@@ -1,122 +1,72 @@
 # DevApps
-An application created to annoy friends
 
-# Markdown Cheat Sheet
+This app was created to send a notification to a telegram channel, DevApps, when changes are committed to this repository: Availebla/DevApps.
 
-Thanks for visiting [The Markdown Guide](https://www.markdownguide.org)!
+## Getting Started
 
-This Markdown cheat sheet provides a quick overview of all the Markdown syntax elements. It can’t cover every edge case, so if you need more information about any of these elements, refer to the reference guides for [basic syntax](https://www.markdownguide.org/basic-syntax) and [extended syntax](https://www.markdownguide.org/extended-syntax).
+### Apps/Functions Used
 
-## Basic Syntax
+* IFTTT: If This Then That service - Free Account Needed
+* Github Actions Workflow - Newly initialized repository
+* Webhooks integrations: https://ifttt.com/maker_webhooks - Recieve a web request with a JSON payload
+* Telegram - Account/Group Chat
 
-These are the elements outlined dain John Gruber’s original design dpocument. All daMarkdown applications support these elements.
+### Languages
 
-### Heading
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-# H1
-## H2
-### H3
+### Executing program
 
-### Bold
-
-**bold text**
-
-### Italic
-
-*italicized text*
-
-### Blockquote
-
-> blockquote
-
-### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-### Unordered List
-
-- First item
-- Second item
-- Third item
-
-### Code
-
-`code`
-
-### Horizontal Rule
-
----
-
-### Link
-
-[Markdown Guide](https://www.markdownguide.org)
-
-### Image
-
-![alt text](https://www.markdownguide.org/assets/images/tux.png)
-
-## Extended Syntax
-
-These elements extend the basic syntax by adding additional features. Not all Markdown applications support these elements.
-
-### Table
-
-| Syntax | Description |
-| ----------- | ----------- |
-| Header | Title |
-| Paragraph | Text |
-
-### Fenced Code Block
-
+* How to run the program
+* Step-by-step bullets
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+code blocks for commands
 ```
 
-### Footnote
+## Help
 
-Here's a sentence with a footnote. [^1]
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
 
-[^1]: This is the footnote.
+## Authors
 
-### Heading ID
+Contributors names and contact info
 
-### My Great Heading {#custom-id}
+ex. Dominique Pizzie  
+ex. [@DomPizzie](https://twitter.com/dompizzie)
 
-### Definition List
+## Version History
 
-term
-: definition
+* 0.2
+    * Various bug fixes and optimizations
+    * See [commit change]() or See [release history]()
+* 0.1
+    * Initial Release
 
-### Strikethrough
+## License
 
-~~The world is flat.~~
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-### Task List
+## Acknowledgments
 
-- [x] Write the press release
-- [ ] Update the website
-- [ ] Contact the media
+Inspiration, code snippets, etc.
+* [ASCII ART](https://text-symbols.com/ascii-art/)
+* [Github Actions secrets](https://www.youtube.com/watch?v=WuWsg0Ldess)
+* [zenorocha](https://gist.github.com/zenorocha/4526327)
+* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
+* [Wordle 274 6/6](https://www.nytimes.com/games/wordle/index.html)
 
-### Emoji
+  ⬜⬜⬜🟩⬜
 
-That is so funny! :joy:
+  ⬜⬜🟨🟩⬜
 
-(See also [Copying and Pasting Emoji](https://www.markdownguide.org/extended-syntax/#copying-and-pasting-emoji))
+  ⬜⬜⬜🟩🟨
 
-### Highlight
+  ⬜🟨🟨🟩⬜
 
-I need to highlight these ==very important words==.
+  🟩🟩⬜🟩⬜
 
-### Subscript
-
-H~2~O
-
-### Superscript
-
-X^2^
+  🟩🟩🟩🟩🟩
