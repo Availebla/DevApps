@@ -54,26 +54,23 @@ To summarize for telegram - the following steps need to be performed in order st
 
 ### The Payload
 
-On IFTTT, an ASCII image was added (in HTML format, painstakingly created using <line breaks>) such that the telegram notification arrives with a beautiful image of a hand holding a tiny bomb (aka payload). This notification also contains the actual JSON payload as well as the Date & Time Stamp and the event name trigger:
+On IFTTT, an ASCII image was added (in HTML format, painstakingly created using line breaks) such that the telegram notification arrives with a beautiful image of a hand holding a tiny bomb (aka payload). This notification also contains the actual JSON payload as well as the Date & Time Stamp and the event name trigger:
 ![Image](images/Last.png)
+
+## Challenges
+An issue pertaining to the applet failing due to too many requests (limit implemented by Telegram's API) was seen, thus the testing had to be cooled off for a while:
+![Image](images/Errors.png)
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
-* [ASCII ART](https://text-symbols.com/ascii-art/)
+* [U1i/ghactions-test](https://github.com/u1i/ghactions-test)
 * [Github Actions secrets](https://www.youtube.com/watch?v=WuWsg0Ldess)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
-* Stress Relief: [Wordle 274 6/6](https://www.nytimes.com/games/wordle/index.html)
-
-  ⬜⬜⬜🟩⬜
-
-  ⬜⬜🟨🟩⬜
-
-  ⬜⬜⬜🟩🟨
-
-  ⬜🟨🟨🟩⬜
-
-  🟩🟩⬜🟩⬜
-
-  🟩🟩🟩🟩🟩
+* [ASCII ART](https://text-symbols.com/ascii-art/)
+* Stress Relief: [Wordle 274 6/6](https://www.nytimes.com/games/wordle/index.html)<br>
+  ⬜⬜⬜🟩⬜ <br>
+  ⬜⬜🟨🟩⬜ <br>
+  ⬜⬜⬜🟩🟨 <br>
+  ⬜🟨🟨🟩⬜ <br>
+  🟩🟩⬜🟩⬜ <br>
+  🟩🟩🟩🟩🟩 <br>
