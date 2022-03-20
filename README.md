@@ -16,6 +16,7 @@ DevApps is a simple app created to send a notification to a telegram channel, De
 1. Commit a change to the repository
 2. Take a sip of coffee
 3. Receive a telegram notification confirming that a change has been made
+[Contribution guidelines for this project](Images/Telegram Notification.png)
 ```
 code blocks for commands
 ```
